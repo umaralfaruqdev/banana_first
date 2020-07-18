@@ -1,0 +1,40 @@
+// contain
+// navbar
+// navbar brand
+// navbar collapse
+// navbar button collapse
+
+.navbar {
+	background-color: #444;
+	min-height: 50px;
+	@extend .faic;
+
+	> .container {
+		padding: 0 15px;
+		@extend .faic;
+	}
+}
+
+.brand {
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 700;
+	margin-right: 25px;
+}
+
+.nav {
+	@extend .faic;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	.link {
+		color: #fff;
+		text-decoration: none;
+		font-size: 14px;
+		padding: 0 .6em;
+		font-weight: 500;
+	}
+}
+

@@ -1,0 +1,43 @@
+.flex, .faic, .navbar, .navbar > .container, .nav {
+  display: flex; }
+
+.aic, .faic, .navbar, .navbar > .container, .nav {
+  align-items: center; }
+
+.jcc {
+  justify-content: center; }
+
+.navbar {
+  background-color: #444;
+  min-height: 50px; }
+  .navbar > .container {
+    padding: 0 15px; }
+
+.brand {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 25px; }
+
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .nav .link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 0 .6em;
+    font-weight: 500; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto'; }
+
+.b {
+  border: 1px solid tomato; }

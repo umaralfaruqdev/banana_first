@@ -1,0 +1,19 @@
+.flex {
+	display: flex;
+}
+
+.aic {
+	align-items: center;
+}
+
+.jcc {
+	justify-content: center;
+}
+
+
+// combine
+.faic {
+	@extend .flex;
+	@extend .aic;
+}
+

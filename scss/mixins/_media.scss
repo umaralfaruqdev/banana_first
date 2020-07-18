@@ -1,0 +1,17 @@
+// contain
+// small screen
+// middle screen
+// large screen
+
+@mixin sm {
+	@media (max-width: 575px) {
+		@content;
+	}
+}
+
+@mixin md {
+	@media (min-width: 768px) {
+		@content;
+	}
+}
+
