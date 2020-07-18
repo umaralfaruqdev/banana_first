@@ -1,11 +1,29 @@
-.flex, .faic, .navbar, .navbar > .container, .nav {
+.flex, .faifs, .faic, .navbar, .navbar > .container, .nav, .faife, .fjcfs, .fjcc, .fjcfe, .fjcsa, .fjcsb, .f-aifs-jcfs, .f-aic-jcc, .f-aife-jcfe {
   display: flex; }
 
-.aic, .faic, .navbar, .navbar > .container, .nav {
+.aifs, .faifs, .f-aifs-jcfs {
+  align-items: flex-start; }
+
+.aic, .faic, .navbar, .navbar > .container, .nav, .f-aic-jcc {
   align-items: center; }
 
-.jcc {
+.aife, .faife, .f-aife-jcfe {
+  align-items: flex-end; }
+
+.jcfs, .fjcfs, .f-aifs-jcfs {
+  justify-content: flex-start; }
+
+.jcc, .fjcc, .f-aic-jcc {
   justify-content: center; }
+
+.jcfe, .fjcfe, .f-aife-jcfe {
+  justify-content: flex-end; }
+
+.jcsa, .fjcsa {
+  justify-content: space-around; }
+
+.jcsb, .fjcsb {
+  justify-content: space-between; }
 
 .navbar {
   background-color: #444;
@@ -37,7 +55,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto'; }
+  font-family: 'Poppins'; }
 
 .b {
   border: 1px solid tomato; }
