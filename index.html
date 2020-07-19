@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Banana</title>
 	<meta name="description" content="Banana framework">
 	<link rel="stylesheet" href="dist/css/banana.css">
@@ -10,15 +11,57 @@
 	<!--Navbar-->
 	<nav class="navbar">
 		<div class="container">
-			<a href="" class="brand">lorem</a>
+			<a class="brand" href="">
+				Lorem
+			</a>
 
-			<ul class="nav">
-				<li class="item"><a class="link" href="">Home</a></li>
-				<li class="item"><a class="link" href="">About</a></li>
-				<li class="item"><a class="link" href="">Contact</a></li>
-			</ul>
+			<button class="navbar-button" data-toggle="collapse" data-target="#navbar" data-state="hidden">
+			</button>
+
+			<div class="navbar-collapse" id="navbar">
+				<ul class="nav">
+					<li class="item"><a class="link" href="">Home</a></li>
+					<li class="item"><a class="link" href="">About</a></li>
+					<li class="item"><a class="link" href="">Contact</a></li>
+				</ul>
+			</div>
 		</div>
 	</nav>
 
+	<div class="container" style="margin-top: 30px;">
+		<div class="row">
+			<div class="col-12">
+				<div class="form-wrap">
+					<input class="input" type="text" spellcheck="false" placeholder="Username or email">
+				</div>
+				<div class="form-wrap">
+					<input class="input" type="text" spellcheck="false" placeholder="Password">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" style="margin-top: 30px;">
+		<div class="row">
+			<div class="col-12">
+				<div class="input-group">
+					<div class="addon">
+						@
+					</div>
+					<input class="input" type="text" spellcheck="false" placeholder="First name">
+					<input class="input" type="text" spellcheck="false" placeholder="First name">
+					<input class="input" type="text" spellcheck="false" placeholder="First name">
+					<div class="addon">
+						@
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="dist/js/collapse.js"></script>
+	<script>
+		Collapse();
+	</script>
 </body>
 </html>

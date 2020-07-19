@@ -1,6 +1,9 @@
 @import 'mixins/media';
 @import 'mixins/flex';
+@import 'mixins/flex-box';
+@import 'grid/grid';
 @import 'components/navbar';
+@import 'components/form';
 @import 'reset';
 
 .b {

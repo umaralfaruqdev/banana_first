@@ -1,10 +1,10 @@
-.flex, .faifs, .faic, .navbar, .navbar > .container, .nav, .faife, .fjcfs, .fjcc, .fjcfe, .fjcsa, .fjcsb, .f-aifs-jcfs, .f-aic-jcc, .f-aife-jcfe {
+.flex, .faifs, .faic, .nav, .faife, .fjcfs, .fjcc, .fjcfe, .fjcsa, .fjcsb, .f-aifs-jcfs, .f-aic-jcc, .f-aife-jcfe {
   display: flex; }
 
 .aifs, .faifs, .f-aifs-jcfs {
   align-items: flex-start; }
 
-.aic, .faic, .navbar, .navbar > .container, .nav, .f-aic-jcc {
+.aic, .faic, .nav, .f-aic-jcc {
   align-items: center; }
 
 .aife, .faife, .f-aife-jcfe {
@@ -25,18 +25,105 @@
 .jcsb, .fjcsb {
   justify-content: space-between; }
 
+.container {
+  padding: 0 15px; }
+
+.row {
+  display: flex;
+  flex-basis: 100%;
+  margin: 0 -15px;
+  flex-wrap: wrap; }
+
+.col-1 {
+  width: 8.33333%; }
+
+.col-2 {
+  width: 16.66667%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33333%; }
+
+.col-5 {
+  width: 41.66667%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33333%; }
+
+.col-8 {
+  width: 66.66667%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33333%; }
+
+.col-11 {
+  width: 91.66667%; }
+
+.col-12 {
+  width: 100%; }
+
+[class*="col-"] {
+  padding: 0 15px; }
+  @media (max-width: 575px) {
+    [class*="col-"] {
+      width: 100%; } }
+
 .navbar {
+  display: flex;
+  align-items: center;
   background-color: #444;
-  min-height: 50px; }
+  min-height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px; }
   .navbar > .container {
-    padding: 0 15px; }
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    flex-grow: 1;
+    width: 100%; }
+    @media (max-width: 575px) {
+      .navbar > .container {
+        flex-wrap: wrap; } }
+  @media (max-width: 575px) {
+    .navbar {
+      flex-wrap: wrap; } }
 
 .brand {
+  display: flex;
+  align-items: center;
   color: #fff;
   text-decoration: none;
   font-size: 18px;
   font-weight: 700;
   margin-right: 25px; }
+  .brand .logo {
+    margin-right: 7px; }
+
+.navbar-button {
+  display: none;
+  margin-left: auto;
+  width: 50px;
+  border: 1px solid #ececec;
+  background-color: transparent;
+  background-image: url("../../assets/icons/bars-white.svg");
+  background-size: 34px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  height: 40px; }
+  @media (max-width: 575px) {
+    .navbar-button {
+      display: unset; }
+      .navbar-button:focus {
+        outline: none; } }
 
 .nav {
   list-style: none;
@@ -48,8 +135,83 @@
     font-size: 14px;
     padding: 0 .6em;
     font-weight: 500; }
+  @media (max-width: 575px) {
+    .nav {
+      align-items: flex-start;
+      flex-direction: column; }
+      .nav .item {
+        width: 100%; }
+      .nav .link {
+        display: flex;
+        width: 100%;
+        padding: 10px 15px; } }
 
-* {
+.navbar-collapse {
+  width: 100%;
+  flex: 1;
+  flex-basis: 100%;
+  overflow: hidden; }
+  @media (max-width: 575px) {
+    .navbar-collapse {
+      margin: 0 -15px;
+      max-height: 0px;
+      transition: max-height .2s ease-out; }
+      .navbar-collapse.active {
+        max-height: 150px; }
+      .navbar-collapse.mgt {
+        margin-top: 10px; }
+      .navbar-collapse.nomg {
+        margin-top: 0;
+        transition: .2s; } }
+
+.input {
+  background-color: white;
+  height: 37px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 100%;
+  min-width: 50px;
+  padding: 0 10px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #222; }
+
+.form-wrap {
+  padding-bottom: 15px; }
+
+.input-group {
+  display: inline-flex;
+  width: 100%; }
+  .input-group > :not(:first-child):not(:last-child) {
+    border-radius: 0; }
+  .input-group > :first-child {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+  .input-group > :last-child {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; }
+  .input-group > :not(:first-child) {
+    margin-left: -1.5px; }
+  .input-group > .input:focus {
+    z-index: 1;
+    outline: 0;
+    border-color: tomato; }
+  .input-group > .addon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    padding: 0 15px;
+    z-index: 1;
+    border: 1px solid #ccc; }
+
+*,
+*::before,
+*::after {
   box-sizing: border-box; }
 
 body {
