@@ -5,13 +5,26 @@
 // navbar button collapse
 
 .navbar {
+	@include f-aic;
 	background-color: #444;
 	min-height: 50px;
-	@extend .faic;
+	padding-top: 10px;
+	padding-bottom: 10px;
 
 	> .container {
+		display: flex;
+		align-items: center;
 		padding: 0 15px;
-		@extend .faic;
+		flex-grow: 1;
+		width: 100%;
+
+		@include sm {
+			flex-wrap: wrap;
+		}
+	}
+
+	@include sm {
+		flex-wrap: wrap;
 	}
 }
 
@@ -21,6 +34,54 @@
 	font-size: 18px;
 	font-weight: 700;
 	margin-right: 25px;
+}
+
+// .navbar-button {
+// display: none;
+// background-image: url('../../assets/icons/bars-white.svg');
+// background-position: center;
+// background-repeat: no-repeat;
+// background-color: transparent;
+// background-size: 34px;
+// border: 1px solid #bbb;
+// border-radius: 5px;
+// min-width: 50px;
+// min-height: 40px;
+// margin-left: auto;
+
+// &:focus {
+// outline: none;
+
+// }
+
+// @include sm {
+// display: unset;
+// margin-top: -10px;
+// margin-bottom: -10px;
+// }
+// }
+
+// menus
+
+.navbar-button {
+	display: none;
+	margin-left: auto;
+	width: 50px;
+	border: 1px solid #ececec;
+	background-color: transparent;
+	background-image: url('../../assets/icons/bars-white.svg');
+	background-size: 34px;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 5px;
+	height: 40px;
+
+	@include sm {
+		display: unset;
+		&:focus {
+			outline: none;
+		}
+	}
 }
 
 .nav {
@@ -36,5 +97,76 @@
 		padding: 0 .6em;
 		font-weight: 500;
 	}
+
+	@include sm {
+		@include aifs;
+		@include f-col;
+
+		.item {
+			width: 100%;
+		}
+
+		.link {
+			display: flex;
+			width: 100%;
+			padding: 10px 15px;
+		}
+	}
+
 }
+
+// navbar collapse
+.navbar-collapse {
+	width: 100%;
+	flex: 1;
+	flex-basis: 100%;
+
+	@include sm {
+		margin: 0 -15px;
+		max-height: 0px;
+		transition: max-height .3s ease-out;
+
+		&.active {
+			max-height: 150px;
+		}
+		&.mgt {
+			margin-top: 10px;
+		}
+
+		&.nomg {
+			margin-top: 0;
+			transition: .3s;
+		}
+	}
+}
+
+// .navbar  {
+// display: flex;
+
+// background-color: #444;
+// > .container {
+// display: flex;
+// padding: 0 15px;
+// width: 100%;
+// flex-grow: 1;
+// background-color: green;
+// }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
