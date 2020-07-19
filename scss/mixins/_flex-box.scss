@@ -1,0 +1,109 @@
+@mixin flex {
+	display: flex;
+}
+
+// align items
+@mixin aifs {
+	align-items: flex-start;
+}
+
+@mixin aic {
+	align-items: center;
+}
+
+@mixin aife {
+	align-items: flex-end;
+}
+
+// justify content
+@mixin jcfs {
+	justify-content: flex-start;
+}
+
+@mixin jcc {
+	justify-content: center;
+}
+
+@mixin jcfe {
+	justify-content: flex-end;
+}
+
+@mixin jcsb {
+	justify-content: space-between;
+}
+
+@mixin jcsa {
+	justify-content: space-around;
+}
+
+// directions
+
+@mixin f-col {
+	flex-direction: column;
+}
+
+// combine
+@mixin f-aic {
+	@include flex;
+	@include aic;
+}
+
+@mixin f-aifs {
+	@include flex;
+	@include aifs;
+}
+
+@mixin faic {
+	@include flex;
+	@include aic;
+}
+
+@mixin f-aife {
+	@include flex;
+	@include aife;
+}
+
+@mixin f-jcfs {
+	@include flex;
+	@include jcfs;
+}
+
+@mixin f-jcc {
+	@include flex;
+	@include jcc;
+}
+
+@mixin f-jcfe {
+	@include flex;
+	@include jcfe;
+}
+
+@mixin f-jcsa {
+	@include flex;
+	@include jcsa;
+}
+
+@mixin f-jcsb {
+	@include flex;
+	@include jcsb;
+}
+
+@mixin f-aifs-jcfs {
+	@include flex;
+	@include aifs;
+	@include jcfs;
+}
+
+
+@mixin f-aic-jcc {
+	@include flex;
+	@include aic;
+	@include jcc;
+}
+
+@mixin f-aife-jcfe {
+	@include flex;
+	@include aife;
+	@include jcfe;
+}
+
