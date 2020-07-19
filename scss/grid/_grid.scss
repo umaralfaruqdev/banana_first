@@ -1,6 +1,34 @@
 // contain
+// container
 // row
 // column
+
 // container
+.container {
+	padding: 0 15px;
+}
+
+// row
+.row {
+	@include flex;
+	flex-basis: 100%;
+	margin: 0 -15px;
+	flex-wrap: wrap;
+}
+
+// column
+
+@for $i from 1 through 12 {
+	.col-#{$i} { width: 8.333333333333334% * $i; }
+}
+
+[class*="col-"] {
+	padding: 0 15px;
+
+	@include sm {
+		width: 100%;
+	}
+}
+
 
 
