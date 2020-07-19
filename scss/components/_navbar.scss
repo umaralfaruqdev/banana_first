@@ -4,6 +4,8 @@
 // navbar collapse
 // navbar button collapse
 
+
+// navbar
 .navbar {
 	@include f-aic;
 	background-color: #444;
@@ -28,41 +30,21 @@
 	}
 }
 
+// brand
 .brand {
+	@include f-aic;
 	color: #fff;
 	text-decoration: none;
 	font-size: 18px;
 	font-weight: 700;
 	margin-right: 25px;
+
+	.logo {
+		margin-right: 7px;
+	}
 }
 
-// .navbar-button {
-// display: none;
-// background-image: url('../../assets/icons/bars-white.svg');
-// background-position: center;
-// background-repeat: no-repeat;
-// background-color: transparent;
-// background-size: 34px;
-// border: 1px solid #bbb;
-// border-radius: 5px;
-// min-width: 50px;
-// min-height: 40px;
-// margin-left: auto;
-
-// &:focus {
-// outline: none;
-
-// }
-
-// @include sm {
-// display: unset;
-// margin-top: -10px;
-// margin-bottom: -10px;
-// }
-// }
-
-// menus
-
+// button for collapse navbar
 .navbar-button {
 	display: none;
 	margin-left: auto;
@@ -84,6 +66,7 @@
 	}
 }
 
+// nav menu
 .nav {
 	@extend .faic;
 	list-style: none;
@@ -120,53 +103,24 @@
 	width: 100%;
 	flex: 1;
 	flex-basis: 100%;
+	overflow: hidden;
 
 	@include sm {
 		margin: 0 -15px;
 		max-height: 0px;
-		transition: max-height .3s ease-out;
+		transition: max-height .2s ease-out;
 
 		&.active {
 			max-height: 150px;
 		}
+
 		&.mgt {
 			margin-top: 10px;
 		}
 
 		&.nomg {
 			margin-top: 0;
-			transition: .3s;
+			transition: .2s;
 		}
 	}
 }
-
-// .navbar  {
-// display: flex;
-
-// background-color: #444;
-// > .container {
-// display: flex;
-// padding: 0 15px;
-// width: 100%;
-// flex-grow: 1;
-// background-color: green;
-// }
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
