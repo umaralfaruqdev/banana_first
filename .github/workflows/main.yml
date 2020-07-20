@@ -5,12 +5,12 @@ on:
     branches:
       - master
 
-    jobs:
-      clear-look-scss:
-        runs-on: ubuntu-latest,
+  jobs:
+    clear-look-scss:
+      runs-on: ubuntu-latest,
 
-        steps:
-          - uses: actions/checkout@v2
+      steps:
+        - uses: actions/checkout@v2
 
-          - name: Checking sass version
-            run: sass -v
+        - name: Checking sass version
+          run: sass -v
