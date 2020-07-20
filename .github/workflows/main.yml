@@ -1,0 +1,16 @@
+name: Test CI
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  scss-to-css:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: action/checkout@v2
+
+      - name: Check sass version
+        run: sass -v
