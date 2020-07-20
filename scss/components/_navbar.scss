@@ -99,6 +99,10 @@
 
 }
 
+body {
+	--maximal: 250px;
+}
+
 // navbar collapse
 .navbar-collapse {
 	@include f-aic;
@@ -114,7 +118,7 @@
 		flex-direction: column;
 
 		&.active {
-			max-height: 250px;
+			max-height: var(--collapse-maximum)
 		}
 
 		&.mgt {

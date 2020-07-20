@@ -38,6 +38,7 @@ var Collapse = function () {
 var _collapseToggle = function (elem) {
 	let _targetSelector = Selector.prop(elem, 'data-target');
 	let target = Selector.findOne(_targetSelector);
+	let maxHeight = target.scrollHeight;
 	
 	elem.addEventListener('click', function (e) {
 	let _state = Selector.prop(elem, 'data-state');
@@ -46,6 +47,7 @@ var _collapseToggle = function (elem) {
 			target.classList.add('active');
 			Selector.setProp(elem, { prop: 'data-state', value: 'shown' });
 			target.classList.remove('nomg');
+			target.style.setProperty('--collapse-maximum', maxHeight + 'px');
 		} else {
 			target.classList.remove('active');
 			Selector.setProp(elem, { prop: 'data-state', value: 'hidden' });

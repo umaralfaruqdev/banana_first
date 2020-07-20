@@ -147,6 +147,9 @@
         width: 100%;
         padding: 10px 15px; } }
 
+body {
+  --maximal: 250px; }
+
 .navbar-collapse {
   display: flex;
   align-items: center;
@@ -161,7 +164,7 @@
       transition: max-height .2s ease-out;
       flex-direction: column; }
       .navbar-collapse.active {
-        max-height: 250px; }
+        max-height: var(--collapse-maximum); }
       .navbar-collapse.mgt {
         margin-top: 10px; }
       .navbar-collapse.nomg {
