@@ -84,6 +84,7 @@
 	@include sm {
 		@include aifs;
 		@include f-col;
+		width: 100%;
 
 		.item {
 			width: 100%;
@@ -100,6 +101,7 @@
 
 // navbar collapse
 .navbar-collapse {
+	@include f-aic;
 	width: 100%;
 	flex: 1;
 	flex-basis: 100%;
@@ -109,9 +111,10 @@
 		margin: 0 -15px;
 		max-height: 0px;
 		transition: max-height .2s ease-out;
+		flex-direction: column;
 
 		&.active {
-			max-height: 150px;
+			max-height: 250px;
 		}
 
 		&.mgt {
