@@ -13,4 +13,4 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Checking sass version
-        run: sass -v
+        run: echo hello
