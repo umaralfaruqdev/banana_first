@@ -16,4 +16,4 @@ jobs:
         run: sudo npm i -g sass
 
       - name: Check sass version
-        run: sass -v
+        run: sass --version
