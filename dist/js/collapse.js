@@ -38,9 +38,13 @@ var Collapse = function () {
 var _collapseToggle = function (elem) {
 	let _targetSelector = Selector.prop(elem, 'data-target');
 	let target = Selector.findOne(_targetSelector);
-	let maxHeight = target.scrollHeight;
 	
 	elem.addEventListener('click', function (e) {
+	let maxHeight = target.scrollHeight;
+  
+  console.log(maxHeight);
+  console.log(target);
+  
 	let _state = Selector.prop(elem, 'data-state');
 		e.preventDefault();
 		if(_state === 'hidden') {
