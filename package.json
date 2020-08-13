@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-		"scss": "node-sass -w scss/banana.scss -o dist/css"
+    "scss": "node-sass -w scss/banana.scss -o dist/css"
   },
-	"publishConfig": {
-		"registry": "https://npm.pkg.github.com/"
-	},
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {}
 }
