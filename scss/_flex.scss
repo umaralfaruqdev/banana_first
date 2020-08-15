@@ -1,0 +1,107 @@
+.flex {
+    @include flex;
+}
+
+// align items
+.aifs {
+    @include aifs;
+}
+
+.aic {
+    @include aic;
+}
+
+.aife {
+    @include aife;
+}
+
+// justify content
+.jcfs {
+    @include jcfs;
+}
+
+.jcc {
+    @include jcc;
+}
+
+.jcfe {
+    @include jcfe;
+}
+
+.jcsb {
+    @include jcsb;
+}
+
+.jcsa {
+    @include jcsa;
+}
+
+// direction
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+
+// combination
+
+// align items
+.f-aifs {
+    @include f-aifs;
+}
+
+.f-aic {
+    @include f-aic;
+}
+
+.f-aife {
+    @include f-aife;
+}
+
+// jc
+.f-jcfs {
+    @include f-jcfs;
+}
+
+.f-jcc {
+    @include f-jcc;
+}
+
+.f-jcfe {
+    @include f-jcfe;
+}
+
+.f-jcsb {
+    @include f-jcsb;
+}
+
+.f-jcsa {
+    @include f-jcsa;
+}
+
+// combine align items and jc
+.f-aifs-jcfs {
+    @include f-aifs-jcfs;
+}
+
+.f-aic-jcc {
+    @include f-aic-jcc;
+}
+
+.f-aife-jcfe {
+    @include f-aife-jcfe;
+}
+
+
+
+
+
+
+
+
+
+
+
