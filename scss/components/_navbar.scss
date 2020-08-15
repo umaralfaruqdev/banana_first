@@ -68,7 +68,7 @@
 
 // nav menu
 .nav {
-	@extend .faic;
+	@include f-aic;
 	list-style: none;
 	margin: 0;
 	padding: 0;
