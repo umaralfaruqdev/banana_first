@@ -156,9 +156,10 @@
   text-decoration: none;
   font-size: 18px;
   font-weight: 700;
-  margin-right: 25px; }
+  margin-right: 25px;
+  white-space: nowrap; }
   .brand .logo {
-    margin-right: 7px; }
+    margin-right: 15px; }
 
 .navbar-button {
   display: none;
@@ -270,6 +271,36 @@ body {
     padding: 0 15px;
     z-index: 1;
     border: 1px solid #ccc; }
+
+[class*="btn-"] {
+  background-color: tomato;
+  border: 1px solid;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 14px;
+  color: #fff;
+  padding: 7px 15px;
+  text-align: center;
+  cursor: pointer; }
+
+[class*="btn-"]:focus {
+  outline: 0; }
+
+[class*="btn-o"] {
+  background-color: transparent; }
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745; }
+
+.btn-o-success {
+  border-color: #28a745;
+  color: #28a745; }
+
+.btn-lg {
+  min-height: 47px;
+  min-width: 150px;
+  font-size: 16px; }
 
 *,
 *::before,

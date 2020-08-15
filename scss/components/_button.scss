@@ -1,0 +1,60 @@
+// button
+
+[class*="btn-"] {
+    background-color: tomato;
+    border: 1px solid;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 14px;
+    color: #fff;
+    padding: 7px 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+// focus button
+[class*="btn-"]:focus {
+    outline: 0;
+}
+
+// outline button
+[class*="btn-o"] {
+    background-color: transparent;
+}
+
+// btn success 
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-o-success {
+    border-color: #28a745;
+    color: #28a745;
+}
+
+
+// btn size
+.btn-lg {
+    min-height: 47px;
+    min-width: 150px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
