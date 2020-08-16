@@ -302,6 +302,9 @@ body {
   min-width: 150px;
   font-size: 16px; }
 
+.img-res {
+  max-width: 100%; }
+
 *,
 *::before,
 *::after {
