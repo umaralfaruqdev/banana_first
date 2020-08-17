@@ -297,6 +297,14 @@ body {
   border-color: #28a745;
   color: #28a745; }
 
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545; }
+
+.btn-o-danger {
+  border-color: #dc3545;
+  color: #dc3545; }
+
 .btn-lg {
   min-height: 47px;
   min-width: 150px;
