@@ -1,0 +1,29 @@
+// contain
+// card
+// card header
+// card body
+// card footer
+
+// card
+.card {
+    border-radius: 6px;
+
+    // image top
+    .img-top {
+        display: block;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+}
+
+// card body
+.card-body {
+    padding: 15px;
+}
+
+// card title
+.card-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #444;
+}

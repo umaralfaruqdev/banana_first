@@ -305,6 +305,30 @@ body {
 .img-res {
   max-width: 100%; }
 
+.card {
+  border-radius: 6px; }
+  .card .img-top {
+    display: block;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; }
+
+.card-body {
+  padding: 15px; }
+
+.card-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #444; }
+
+.tl {
+  text-align: left; }
+
+.tc {
+  text-align: center; }
+
+.tr {
+  text-align: right; }
+
 *,
 *::before,
 *::after {
@@ -322,7 +346,8 @@ h4,
 h5,
 h6,
 p {
-  line-height: 1.5; }
+  line-height: 1.5;
+  margin: 0; }
 
 .b {
   border: 1px solid tomato; }

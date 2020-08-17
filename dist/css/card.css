@@ -1,0 +1,8 @@
+.card {
+  border-radius: 6px; }
+  .card .img-top {
+    display: block;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; }
+  .card .card-body {
+    padding: 15px; }
